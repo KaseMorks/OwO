@@ -16,10 +16,10 @@ public class DragonMovement : MonoBehaviour
     {
         horizontalMove = Input.GetAxisRaw("Horizontal") * moveSpeed;
         animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
-        if (Input.GetButtonDown("Jump"))
+        if (Input.GetKeyDown(KeyCode.W))
         {
             jump = true;
-            animator.SetBool("IsJumping", true);
+            //animator.SetBool("IsJumping", true);
         }
         
            

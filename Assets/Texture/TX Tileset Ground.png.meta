@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -3435,7 +3435,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      TX Tileset Ground_144: -1901499012
+      TX Tileset Ground_150: -2111632624
       TX Tileset Ground_14: 541282796
       TX Tileset Ground_50: 1967100627
       TX Tileset Ground_2: 441954486
@@ -3586,11 +3586,11 @@ TextureImporter:
       TX Tileset Ground_108: 1026294711
       TX Tileset Ground_51: -1649233526
       TX Tileset Ground_113: 1587392134
-      TX Tileset Ground_102: 1826829443
+      TX Tileset Ground_116: -1280319361
       TX Tileset Ground_0: -610491850
       TX Tileset Ground_95: -589450742
-      TX Tileset Ground_116: -1280319361
-      TX Tileset Ground_150: -2111632624
+      TX Tileset Ground_144: -1901499012
+      TX Tileset Ground_102: 1826829443
       TX Tileset Ground_130: -180423019
   spritePackingTag: 
   pSDRemoveMatte: 0

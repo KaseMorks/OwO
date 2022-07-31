@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 6d7b9aca2c3ec574c9b5610cf616d34b
+guid: 0766ab2aceb6b8c4cb515a9dc54216dc
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -128,97 +128,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: OWO-01_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 1080
-        width: 1920
-        height: 1080
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bbdf70fae12342545b0c5eb39f5c258c
-      internalID: -517555839
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: OWO-01_1
-      rect:
-        serializedVersion: 2
-        x: 1920
-        y: 1080
-        width: 1920
-        height: 1080
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e0728710f26c012428c6e1da34d7a810
-      internalID: -1118055720
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: OWO-01_2
-      rect:
-        serializedVersion: 2
-        x: 3840
-        y: 1080
-        width: 1920
-        height: 1080
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 55cafd3c714f31944819f40e57e7c6b9
-      internalID: -617958537
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: OWO-01_3
-      rect:
-        serializedVersion: 2
-        x: 5760
-        y: 1080
-        width: 1920
-        height: 1080
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5fea67aca1213ff418dec63ffa6b45c6
-      internalID: 859546041
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: OWO-01_4
+      name: Skeleton Hit_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1920
-        height: 1080
+        width: 30
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -226,20 +142,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: be13159922d303a4585fc5fb66b1d7ed
-      internalID: -1444972390
+      spriteID: 67dceeac36c9185489e2cc8c5254a832
+      internalID: -782187064
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OWO-01_5
+      name: Skeleton Hit_1
       rect:
         serializedVersion: 2
-        x: 1920
+        x: 30
         y: 0
-        width: 1920
-        height: 1080
+        width: 30
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -247,20 +163,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 33fea567a36bfdb4396f2f93b85afb3e
-      internalID: -1366119655
+      spriteID: 2e7e01f7150bfe74cbcc9805577068a2
+      internalID: -649463038
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OWO-01_6
+      name: Skeleton Hit_2
       rect:
         serializedVersion: 2
-        x: 3840
+        x: 60
         y: 0
-        width: 1920
-        height: 1080
+        width: 30
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -268,20 +184,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a77fa22321935074b9eb5863ce1aa18f
-      internalID: 910346899
+      spriteID: d6ecd4a286ef5804bab8932704aa4144
+      internalID: 490287438
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OWO-01_7
+      name: Skeleton Hit_3
       rect:
         serializedVersion: 2
-        x: 5760
+        x: 90
         y: 0
-        width: 1920
-        height: 1080
+        width: 30
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -289,8 +205,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 267f10ac35e513a4689284d615ab22ba
-      internalID: -1276340058
+      spriteID: 42b53a06693e47c49bc5aa3d0cb3e34c
+      internalID: -1915579193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton Hit_4
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 0
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d6c04403b0d22c4a92c6d797b3b35c5
+      internalID: 1220745549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton Hit_5
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 0
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7ef67776c2777e4e98ff104b785dd4a
+      internalID: 1210787794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton Hit_6
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 0
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a181de3bdba11ed459d4d7f1efde09d4
+      internalID: -488291008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton Hit_7
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 0
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 899a775f65e356d4cb4a239aa18cecf9
+      internalID: -1764174152
       vertices: []
       indices: 
       edges: []
@@ -306,14 +306,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      OWO-01_7: -1276340058
-      OWO-01_1: -1118055720
-      OWO-01_5: -1366119655
-      OWO-01_2: -617958537
-      OWO-01_0: -517555839
-      OWO-01_4: -1444972390
-      OWO-01_3: 859546041
-      OWO-01_6: 910346899
+      Skeleton Hit_3: -1915579193
+      Skeleton Hit_5: 1210787794
+      Skeleton Hit_6: -488291008
+      Skeleton Hit_1: -649463038
+      Skeleton Hit_4: 1220745549
+      Skeleton Hit_0: -782187064
+      Skeleton Hit_2: 490287438
+      Skeleton Hit_7: -1764174152
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

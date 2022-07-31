@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -3048,10 +3048,10 @@ TextureImporter:
       TX Village Props_44: -344881670
       TX Village Props_73: 1751447856
       TX Village Props_118: -1344784806
-      TX Village Props_64: -2027652357
-      TX Village Props_79: -1927237667
       TX Village Props_13: 2119239047
+      TX Village Props_79: -1927237667
       TX Village Props_109: -16498576
+      TX Village Props_64: -2027652357
       TX Village Props_131: -1439534051
       TX Village Props_14: 1834751777
       TX Village Props_94: 613936392
