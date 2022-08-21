@@ -100,7 +100,7 @@ AnimatorController:
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
-  - m_Name: Enemy_Death
+  - m_Name: Death
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -220,7 +220,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: Enemy_Death
+    m_ConditionEvent: Death
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 4840663665835569911}
@@ -232,10 +232,10 @@ AnimatorStateTransition:
   m_TransitionOffset: 0
   m_ExitTime: 0.75
   m_HasExitTime: 0
-  m_HasFixedDuration: 1
+  m_HasFixedDuration: 0
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
-  m_CanTransitionToSelf: 1
+  m_CanTransitionToSelf: 0
 --- !u!1101 &2255774614549637280
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -273,7 +273,7 @@ AnimatorStateTransition:
     m_ConditionEvent: Enemy_Attack
     m_EventTreshold: 0
   - m_ConditionMode: 2
-    m_ConditionEvent: Enemy_Death
+    m_ConditionEvent: Death
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 371752146391546557}
@@ -301,7 +301,7 @@ AnimatorStateTransition:
     m_ConditionEvent: Enemy_Hurt
     m_EventTreshold: 0
   - m_ConditionMode: 2
-    m_ConditionEvent: Enemy_Death
+    m_ConditionEvent: Death
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 6051813226064549604}
