@@ -1275,7 +1275,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 81d9e37fa24c6ca4d9b30643f346b5c1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2328,6 +2328,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 49621183004e81144a9b2263b435ae32, type: 3}
+--- !u!212 &831122274 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 5790942971281449874, guid: f90249d5482298649ae4594dc751d29f, type: 3}
+  m_PrefabInstance: {fileID: 5790942970488673925}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &837564856 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4582404052814639309, guid: 566ab805936607f47a642cb67ad3d34b, type: 3}
@@ -8222,7 +8227,7 @@ MonoBehaviour:
   animator: {fileID: 1093745564}
   groundLayer:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 72
   characterHolder: {fileID: 1093745554}
   maxSpeed: 7
   linearDrag: 35
@@ -8233,6 +8238,7 @@ MonoBehaviour:
   colliderOffset: {x: 0, y: 0, z: 0}
   ProjectilePrefab: {fileID: 8812522143950382252, guid: 691eb66f92f7bb74d989edba8a1653ef, type: 3}
   DragonMouth: {fileID: 1274489722}
+  FireRate: 0.35
 --- !u!4 &1095274556 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5356554374109515024, guid: 02cffd4f4a4216145970328bef9888bb, type: 3}
@@ -19814,6 +19820,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bucket
       objectReference: {fileID: 0}
+    - target: {fileID: 2485777423046109330, guid: d6bbe352c0384b746b290c4e09d834d6, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 2485777423046109337, guid: d6bbe352c0384b746b290c4e09d834d6, type: 3}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.size
       value: 12
@@ -20383,7 +20393,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6790886274800422067, guid: 1d6b7e7067abe5c44a10a2c3824cbda2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.78
+      value: 6.72
       objectReference: {fileID: 0}
     - target: {fileID: 6790886274800422067, guid: 1d6b7e7067abe5c44a10a2c3824cbda2, type: 3}
       propertyPath: m_LocalPosition.z
@@ -20420,6 +20430,10 @@ PrefabInstance:
     - target: {fileID: 9016958429483757282, guid: 1d6b7e7067abe5c44a10a2c3824cbda2, type: 3}
       propertyPath: m_Name
       value: Pumkin_A
+      objectReference: {fileID: 0}
+    - target: {fileID: 9016958429483757282, guid: 1d6b7e7067abe5c44a10a2c3824cbda2, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d6b7e7067abe5c44a10a2c3824cbda2, type: 3}
@@ -20571,6 +20585,14 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5790942971281449875, guid: f90249d5482298649ae4594dc751d29f, type: 3}
+      propertyPath: m_Mass
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 5790942971281449875, guid: f90249d5482298649ae4594dc751d29f, type: 3}
+      propertyPath: m_LinearDrag
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 5790942971281449877, guid: f90249d5482298649ae4594dc751d29f, type: 3}
       propertyPath: m_Name
       value: Enemy_Skeleton
@@ -20581,11 +20603,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5790942971281449885, guid: f90249d5482298649ae4594dc751d29f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 58.51
+      value: -15.08
       objectReference: {fileID: 0}
     - target: {fileID: 5790942971281449885, guid: f90249d5482298649ae4594dc751d29f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.73
+      value: -3.91
       objectReference: {fileID: 0}
     - target: {fileID: 5790942971281449885, guid: f90249d5482298649ae4594dc751d29f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -20631,6 +20653,10 @@ PrefabInstance:
       propertyPath: Collider2D
       value: 
       objectReference: {fileID: 383176695}
+    - target: {fileID: 5790942971281449887, guid: f90249d5482298649ae4594dc751d29f, type: 3}
+      propertyPath: SpriteRenderer
+      value: 
+      objectReference: {fileID: 831122274}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f90249d5482298649ae4594dc751d29f, type: 3}
 --- !u!1001 &5846917269662205132

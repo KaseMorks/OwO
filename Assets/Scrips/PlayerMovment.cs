@@ -38,12 +38,14 @@ public class PlayerMovment : MonoBehaviour
     [Header("§ðÀ»®g¼u")]
     public ProjectileBehaviour ProjectilePrefab;
     public Transform DragonMouth;
-
+    public float FireRate = 1.0f;
+    private float NextFire = 0.0f;
 
     void Update()
     {
-        if (Input.GetButtonDown("Fire1")) 
+        if (Input.GetButtonDown("Fire1") && Time.time > NextFire) 
         {
+            NextFire = Time.time + FireRate;
             Instantiate(ProjectilePrefab, DragonMouth.position, transform.rotation);
             animator.SetTrigger("Attack_Flame");
         }
