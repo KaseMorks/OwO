@@ -11,6 +11,7 @@ public class MeleeEnemy : MonoBehaviour
     [SerializeField] private Animator EnemyAnimator;
     private float CoolDownTimer = Mathf.Infinity;
     private EnemyPatrol enemyPatrol;
+    private PlayerCombat PlayerOnhit;
 
 
     private void Awake()
@@ -42,6 +43,12 @@ public class MeleeEnemy : MonoBehaviour
     private bool PlayerInSight()
     {
         RaycastHit2D Hit = Physics2D.BoxCast(BoxCollider.bounds.center + transform.right * Range * transform.localScale.x * ColliderDistance, new Vector3(BoxCollider.bounds.size.x * Range,BoxCollider.bounds.size.y,BoxCollider.bounds.size.z),0,Vector2.left,0,PlayerLayer);
+        
+        
+        if (Hit.collider != null)
+        {
+            PlayerOnhit = Hit.transform.GetComponent<PlayerCombat>();
+        }
         return Hit.collider != null;
     }
 
@@ -49,6 +56,14 @@ public class MeleeEnemy : MonoBehaviour
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireCube(BoxCollider.bounds.center + transform.right * Range * transform.localScale.x * ColliderDistance, new Vector3(BoxCollider.bounds.size.x * Range, BoxCollider.bounds.size.y, BoxCollider.bounds.size.z));
+    }
+
+    private void DamagePlayer()
+    {
+        if (PlayerInSight())
+        {
+            PlayerOnhit.PlayerTakeHit(10);
+        }
     }
 }
 

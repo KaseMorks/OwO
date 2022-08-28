@@ -1,8 +1,8 @@
-
 using UnityEngine;
 
 public class ProjectileBehaviour : MonoBehaviour
 {
+    [SerializeField] float ProjectDamage = 1f;
     private void Start()
     {
         Destroy(gameObject, 10);
@@ -17,7 +17,7 @@ public class ProjectileBehaviour : MonoBehaviour
         var enemy = collision.collider.GetComponent<EnemyBehaviour>();
         if (enemy)
         {
-            enemy.TakeHit(1);
+            enemy.TakeHit(ProjectDamage);
         }
         Destroy(gameObject);
     }
