@@ -12,7 +12,7 @@ TagManager:
   - Water
   - UI
   - Object
-  - 
+  - Player
   - 
   - 
   - 
@@ -44,7 +44,7 @@ TagManager:
   - name: Font
     uniqueID: 3352103021
     locked: 0
-  - name: Ground
+  - name: Mountain
     uniqueID: 87237493
     locked: 0
   - name: Back
