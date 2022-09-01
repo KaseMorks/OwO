@@ -32,8 +32,8 @@ public class PlayerMovment : MonoBehaviour
 
     [Header("¸I¼²")] //Ä²¦a°»´ú
     public bool onGround = false;
-    public float groundLength = 0.5f;
     public Vector3 colliderOffset;
+    [SerializeField] Vector2 AreaShape;
 
     [Header("§ðÀ»®g¼u")]
     public ProjectileBehaviour ProjectilePrefab;
@@ -51,7 +51,7 @@ public class PlayerMovment : MonoBehaviour
         }
 
         bool wasOnGround = onGround;
-        onGround = Physics2D.Raycast(transform.position + colliderOffset, Vector2.down, groundLength, groundLayer) || Physics2D.Raycast(transform.position - colliderOffset, Vector2.down, groundLength, groundLayer);
+        onGround = Physics2D.BoxCast(transform.position - colliderOffset, new Vector3(AreaShape.x, AreaShape.y,1),0,Vector2.zero,0, groundLayer);
 
         if (!wasOnGround && onGround)
         {
@@ -140,13 +140,13 @@ public class PlayerMovment : MonoBehaviour
         Vector3 originalSize = Vector3.one;
         Vector3 newSize = new Vector3(xSqueeze, ySqueeze, originalSize.z);
         float t = 0f;
-        while (t <= 1.0)
+        /*while (t <= 1.0)
         {
             t += Time.deltaTime / seconds;
             characterHolder.transform.localScale = Vector3.Lerp(originalSize, newSize, t);
             yield return null;
         }
-        t = 0f;
+        t = 0f;*/
         while (t <= 1.0)
         {
             t += Time.deltaTime / seconds;
@@ -161,7 +161,8 @@ public class PlayerMovment : MonoBehaviour
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
-        Gizmos.DrawLine(transform.position + colliderOffset, transform.position + colliderOffset + Vector3.down * groundLength);
-        Gizmos.DrawLine(transform.position - colliderOffset, transform.position - colliderOffset + Vector3.down * groundLength);
+        //Gizmos.DrawLine(transform.position + colliderOffset, transform.position + colliderOffset + Vector3.down * groundLength);
+        //Gizmos.DrawLine(transform.position - colliderOffset, transform.position - colliderOffset + Vector3.down * groundLength);
+        Gizmos.DrawCube(transform.position - colliderOffset, new Vector3(AreaShape.x,AreaShape.y, 1));
     }
 }
