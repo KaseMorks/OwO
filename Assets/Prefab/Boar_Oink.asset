@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21ed2b4b94d693448a01c57af4af83ac, type: 3}
+  m_Name: Boar_Oink
+  m_EditorClassIdentifier: 
+  NPC_Name: "\u91CE\u8C6C"
+  Content:
+  - "\u90A3\u500B\u5947\u602A\u7684\u9AB7\u9ACF\u6436\u8D70\u4E86\u6211\u7684\u665A\u9910\uFF0C\u90A3\u7F8E\u5473\u7684\u5357\u74DC\uFF0C\u9084\u6545\u610F\u653E\u5728\u6211\u62FF\u4E0D\u5230\u7684\u5730\u65B9\u8B93\u6211\u770B\u4E0D\u5230\u5403\u4E0D\u5230\u3002
+    \u597D\u5FC3\u7684\u5C0F\u9F8D\u80FD\u5E6B\u6211\u6559\u8A13\u9AB7\u9ACF\u55CE?"
+  - "\u8B1D\u8B1D! \u8B1D\u8B1D! \u8B1D\u8B1D\u4F60!! (\u91CE\u8C6C\u958B\u5FC3\u5230\u8B1B\u51FA\u7684\u8A71\u4E0D\u6642\u6DF7\u96DC\u8457\u8C6C\u7684\u54FC\u54FC\u8072)"
