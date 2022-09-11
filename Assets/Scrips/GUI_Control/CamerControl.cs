@@ -1,9 +1,10 @@
 using UnityEngine;
 using Cinemachine;
 
+
 public class CamerControl : MonoBehaviour
 {
-    [SerializeField] private GameObject playerControl;
+    public controlSwitch m_Com; //¨¤¦â±±¨î¾¹
     [SerializeField] private CinemachineVirtualCamera Vcamera;
     [SerializeField] float OnTime, OffTime;
     
@@ -14,7 +15,7 @@ public class CamerControl : MonoBehaviour
     
     private void VcamOn()
     {
-        playerControl.GetComponent<PlayerMovment>().enabled = false;
+        m_Com.inputSwitch(false);
         Vcamera.gameObject.SetActive(true);
         Debug.Log("VCamOn");
         Invoke("VcamOff", OffTime);
@@ -22,7 +23,7 @@ public class CamerControl : MonoBehaviour
     
     private void VcamOff()
     {
-        playerControl.GetComponent<PlayerMovment>().enabled = true;
+        m_Com.inputSwitch(true);
         Vcamera.gameObject.SetActive(false);
         Debug.Log("VCamOff");
     }

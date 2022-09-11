@@ -50,7 +50,7 @@ public class PlayerMovment : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetButtonDown("Fire1") && Time.time > NextFire) 
+        if (Input.GetKeyDown(KeyCode.F) && Time.time > NextFire) 
         {
             NextFire = Time.time + FireRate;
             Instantiate(ProjectilePrefab, DragonMouth.position, transform.rotation);

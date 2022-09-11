@@ -32,7 +32,6 @@ public class MeleeEnemy : MonoBehaviour
             {
                 CoolDownTimer = 0;
                 EnemyAnimator.SetTrigger("Enemy_Attack");
-                print("I an Attacking");
             }
         }
         
@@ -62,7 +61,7 @@ public class MeleeEnemy : MonoBehaviour
     {
         if (PlayerInSight())
         {
-            PlayerOnhit.PlayerTakeHit(10);
+            PlayerOnhit.PlayerTakeHit(Damage);
         }
     }
 }
