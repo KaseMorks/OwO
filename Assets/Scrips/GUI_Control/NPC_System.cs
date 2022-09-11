@@ -7,6 +7,7 @@ public class NPC_System : MonoBehaviour
     private bool isDiloagy = false;
     private CanvasGroup groupTip;
     private CanvasGroup groupChat;
+    [SerializeField] TextMeshProUGUI ChatName;
     [SerializeField]TextMeshProUGUI ChatText;
     [SerializeField] ScripableData ChatContent;
 
@@ -20,7 +21,6 @@ public class NPC_System : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.tag == "Player")
-        Debug.Log("§A¼²¨ì¤F"+ collision.gameObject);
         groupTip.alpha = 1;
         isInRange = true;
     }
@@ -33,6 +33,7 @@ public class NPC_System : MonoBehaviour
             isDiloagy = false;
         
     }
+
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.E)&& isInRange)
@@ -48,6 +49,7 @@ public class NPC_System : MonoBehaviour
             {
                 groupTip.alpha = 0;
                 groupChat.alpha = 1;
+                ChatName.text = ChatContent.NPC_Name;
                 ChatText.text = ChatContent.Content[0];
                 isDiloagy = true;
             }
