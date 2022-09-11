@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -17,6 +18,12 @@ public class PlayerMovment : MonoBehaviour
     [Header("組件")] //拉程式需使用組件
     public Rigidbody2D rb;
     public Animator animator;
+
+    internal void SetActive(bool v)
+    {
+        throw new NotImplementedException();
+    }
+
     public LayerMask groundLayer;
     public GameObject characterHolder;
 
@@ -55,7 +62,7 @@ public class PlayerMovment : MonoBehaviour
 
         if (!wasOnGround && onGround)
         {
-            StartCoroutine(JumpSqueeze(1.25f, 0.8f, 0.05f));
+            //StartCoroutine(JumpSqueeze(1.25f, 0.8f, 0.05f));
         }
 
         if (Input.GetButtonDown("Jump"))
@@ -95,7 +102,7 @@ public class PlayerMovment : MonoBehaviour
         rb.velocity = new Vector2(rb.velocity.x, 0);
         rb.AddForce(Vector2.up * jumpSpeed, ForceMode2D.Impulse);
         jumpTimer = 0;
-        StartCoroutine(JumpSqueeze(0.5f, 1.2f, 0.1f));
+        //StartCoroutine(JumpSqueeze(0.5f, 1.2f, 0.1f));
     }
     void modifyPhysics()
     {
@@ -135,18 +142,18 @@ public class PlayerMovment : MonoBehaviour
         facingLeft = !facingLeft;
         transform.rotation = Quaternion.Euler(0, facingLeft ? 0 : 180, 0);
     }
-    IEnumerator JumpSqueeze(float xSqueeze, float ySqueeze, float seconds)
+   /*IEnumerator JumpSqueeze(float xSqueeze, float ySqueeze, float seconds)
     {
         Vector3 originalSize = Vector3.one;
         Vector3 newSize = new Vector3(xSqueeze, ySqueeze, originalSize.z);
         float t = 0f;
-        /*while (t <= 1.0)
+        while (t <= 1.0)
         {
             t += Time.deltaTime / seconds;
             characterHolder.transform.localScale = Vector3.Lerp(originalSize, newSize, t);
             yield return null;
         }
-        t = 0f;*/
+        t = 0f;
         while (t <= 1.0)
         {
             t += Time.deltaTime / seconds;
@@ -154,11 +161,11 @@ public class PlayerMovment : MonoBehaviour
             yield return null;
         }
 
-    }
-    /// <summary>
-    /// 繪製可視化偵測線
-    /// </summary>
-    private void OnDrawGizmos()
+    }*/
+/// <summary>
+/// 繪製可視化偵測線
+/// </summary>
+private void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
         //Gizmos.DrawLine(transform.position + colliderOffset, transform.position + colliderOffset + Vector3.down * groundLength);

@@ -7,9 +7,10 @@ public class NPC_System : MonoBehaviour
     private bool isDiloagy = false;
     private CanvasGroup groupTip;
     private CanvasGroup groupChat;
+    private byte _content;
     [SerializeField] TextMeshProUGUI ChatName;
-    [SerializeField]TextMeshProUGUI ChatText;
-    [SerializeField] ScripableData ChatContent;
+    [SerializeField] TextMeshProUGUI ChatText;
+    [SerializeField] ScripableData[] ChatContent;
 
     [SerializeField]private string nameCanvas;
     private void Awake()
@@ -33,7 +34,10 @@ public class NPC_System : MonoBehaviour
             isDiloagy = false;
         
     }
-
+    public void changeContent(byte _Con)
+    {
+        _content = _Con;
+    }
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.E)&& isInRange)
@@ -49,8 +53,8 @@ public class NPC_System : MonoBehaviour
             {
                 groupTip.alpha = 0;
                 groupChat.alpha = 1;
-                ChatName.text = ChatContent.NPC_Name;
-                ChatText.text = ChatContent.Content[0];
+                ChatName.text = ChatContent[_content].NPC_Name;
+                ChatText.text = ChatContent[_content].Content[0];
                 isDiloagy = true;
             }
         }

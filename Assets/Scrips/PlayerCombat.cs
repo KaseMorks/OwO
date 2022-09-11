@@ -8,7 +8,7 @@ public class PlayerCombat : MonoBehaviour
 
     private void Awake()
     {
-        SetHP = GetComponentInChildren<PlayerHealthbar>();
+        SetHP = GameObject.Find("Fill").GetComponent<PlayerHealthbar>();
     }
 
     private void Start()

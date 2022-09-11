@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21ed2b4b94d693448a01c57af4af83ac, type: 3}
+  m_Name: Need_Food
+  m_EditorClassIdentifier: 
+  NPC_Name: "\u91CE\u8C6C\u4ED4"
+  Content:
+  - "\u54C8\u54C8! \u8A0E\u53AD\u7684\u9AB7\u9ACF\uFF0C\u7D42\u65BC\u5F97\u5230\u6559\u8A13\u4E86!
+    \u53EF\u662F\u6211\u9084\u662F\u62FF\u4E0D\u5230\u90A3\u7F8E\u5473\u7684\u5357\u74DC...\u597D\u5FC3\u7684\u5C0F\u9F8D\u80FD\u5E6B\u6211\u62FF\u4E0B\u4F86\u55CE?"
