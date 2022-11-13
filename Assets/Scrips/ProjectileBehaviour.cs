@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class ProjectileBehaviour : MonoBehaviour
 {
+    [SerializeField] private GameObject explosionEffect;
     [SerializeField] float ProjectDamage = 1f;
     private void Start()
     {
@@ -19,7 +20,7 @@ public class ProjectileBehaviour : MonoBehaviour
         {
             enemy.TakeHit(ProjectDamage);
         }
-        
+        Instantiate(explosionEffect, transform.position, transform.rotation);
         Destroy(gameObject);
     }
 }    
