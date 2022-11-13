@@ -31,7 +31,7 @@ public class EnemyBehaviour : MonoBehaviour
             
             InvokeRepeating("Death", 1, 0.1f);
             Destroy(gameObject, 2);
-            GameObject tempProp = ObjectPool.instance.GetPoolObject();
+            //GameObject tempProp = ObjectPool.instance.GetPoolObject();
         }
     }
     void Death() 

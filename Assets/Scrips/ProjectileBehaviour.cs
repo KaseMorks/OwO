@@ -19,6 +19,7 @@ public class ProjectileBehaviour : MonoBehaviour
         {
             enemy.TakeHit(ProjectDamage);
         }
+        
         Destroy(gameObject);
     }
 }    
