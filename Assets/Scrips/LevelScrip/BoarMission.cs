@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class BoarMission : MonoBehaviour
 {
+    private byte _content = 3;
     [SerializeField]private GameObject Happy;
-    private GameObject targetEnemy;
+    [SerializeField]private GameObject[] targetEnemy;
     private NPC_System missionReport;
     private bool _mission1, _mission2;
     private void Awake()
     {
         
-        targetEnemy = GameObject.Find("Enemy_Skeleton");
         missionReport = GameObject.Find("Cute_Boar").GetComponent<NPC_System>();
         
     }
@@ -25,7 +25,7 @@ public class BoarMission : MonoBehaviour
     }
     private void Update()
     {
-        if (targetEnemy == null)
+        if (targetEnemy[_content] == null)
             _mission2 = true;
         if (_mission1 == true && _mission2 == true)
         {
